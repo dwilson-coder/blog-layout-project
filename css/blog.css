@@ -36,8 +36,11 @@ article {
 
 .author-social li {
   padding-right: 10px;
-  font-size: 24px;
 }
+.author-social img {
+  width: 24px;
+}
+
 .tags {
   padding: 10px;
   display: grid;
@@ -49,23 +52,13 @@ article {
   justify-content: center;
 }
 .tags a {
-  background: lightblue;
+  background: #ccc;
   padding: 5px;
   border-radius: 5px;
   text-align: center;
 }
-/* Media query */
-@media only screen and (max-width: 900px) {
-  .blog-parent {
-    flex-wrap: wrap;
-  }
-  aside {
-    margin-bottom: 50px;
-  }
-  article {
-    width: 75vw;
-  }
-  .article-img img {
-    width: 75%;
-  }
+
+.tags a:hover {
+  background-color: lightblue;
+  color: #000;
 }
